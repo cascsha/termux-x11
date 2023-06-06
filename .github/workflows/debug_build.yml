@@ -1,5 +1,7 @@
 name: Build
 
+workflow_dispatch: yes
+
 on:
   push:
     branches:
