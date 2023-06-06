@@ -1,15 +1,14 @@
 name: Build
 
-workflow_dispatch: yes
-
 on:
-  push:
-    branches:
-      - master
-      - x11-client-experimental
-  pull_request:
-    branches:
-      - master
+  workflow_dispatch:
+    push:
+      branches:
+        - master
+        - x11-client-experimental
+    pull_request:
+      branches:
+        - master
 
 jobs:
   build:
